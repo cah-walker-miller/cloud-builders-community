@@ -17,4 +17,4 @@ RUN chmod +x /builder/helm.bash && \
 
 ENV PATH=/builder/helm/:$PATH
 
-ENTRYPOINT ["/builder/helm.bash"]
+ENTRYPOINT ["/builder/helm/helm"]
