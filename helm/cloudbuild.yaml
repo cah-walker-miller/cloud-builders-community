@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$PROJECT_ID/helm', '--build-arg', 'HELM_VERSION=v2.12.2', '.']
-  workdir: helm
+  dir: helm
 
 images: ['gcr.io/$PROJECT_ID/helm']
